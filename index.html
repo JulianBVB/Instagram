@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title>Instagram</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+
+
+
+
+
+    <script src="script.js"></script>
+</head>
+
+<body onload="loadPosts(); loadFollowers()">
+
+    <div class="header">
+        <div class="header-left">
+            <p onclick="togglePopupError()">Instagram</p>
+        </div>
+        <div class="header-middle">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <div class="header-right">
+            <span onclick="togglePopupError()" class="material-icons-outlined">
+                home
+            </span>
+
+            <span onclick="togglePopupError()" class="material-icons-outlined">
+                send
+            </span>
+
+            <span onclick="togglePopupError()" class="material-icons-outlined">
+                explore
+            </span>
+
+            <span onclick="togglePopupError()" class="material-icons-outlined">
+                favorite_border
+            </span>
+        </div>
+    </div>
+
+
+    <div class="main">
+
+        <div class="newsfeed">
+            <div class="follower-block">
+                <div id="followers" class="follower">
+                </div>
+            </div>
+            <div id="posts" class="posts">
+            </div>
+
+
+
+        </div>
+
+        <div class="side-bar">
+
+            <div class="side-bar-content">
+                <div class="aboutME">
+                    <div>
+                        <img src="img/4.JPG">
+                    </div>
+                    <div class="follower-info">
+                        <p>Julian Stahl</p>
+                        <p class="posts-detail-color">StahlsJulian</p>
+                    </div>
+                    <div class="follower-name">
+                        <p onclick="togglePopupError()" class="blue">wechseln</p>
+                    </div>
+                </div>
+                <p>Vorschläge für dich</p>
+
+                <div class="aboutME">
+                    <div>
+                        <img src="img/4.JPG">
+                    </div>
+                    <div class="follower-info">
+                        <p>Julian Stahl</p>
+                        <p class="posts-detail-color">StahlsJulian</p>
+                    </div>
+                    <div class="follower-name">
+                        <p  onclick="togglePopupError()" class="blue">Abbonnieren</p>
+                    </div>
+                </div>
+
+                <div class="aboutME">
+                    <div>
+                        <img src="img/4.JPG">
+                    </div>
+                    <div class="follower-info">
+                        <p>Julian Stahl</p>
+                        <p class="posts-detail-color">StahlsJulian</p>
+                    </div>
+                    <div class="follower-name">
+                        <p onclick="togglePopupError()" class="blue">Abbonnieren</p>
+                    </div>
+                </div>
+
+                <div class="aboutME">
+                    <div>
+                        <img src="img/4.JPG">
+                    </div>
+                    <div class="follower-info">
+                        <p>Julian Stahl</p>
+                        <p class="posts-detail-color">StahlsJulian</p>
+                    </div>
+                    <div class="follower-name">
+                        <p onclick="togglePopupError()" class="blue">Abbonnieren</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Bitte fülle alle Pflichfelder aus</h1>
+        </div>
+    </div>
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopupError()">&times;</div>
+            <h1>Das ist leider nur eine Demoseite :-(</h1>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

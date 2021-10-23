@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    background-color: #F2F2F2;
+    margin-top: 12vh;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Header */
+
+.header {
+    font-family: 'Qahiri', sans-serif;
+    font-size: 7vh;
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.header-left {
+    margin-left: 17vw;
+    align-items: center;
+}
+
+.header-left p {
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 17vw;
+}
+
+.header-right span {
+    margin-right: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+}
+
+/* Newsfeed */
+
+.newsfeed {
+    margin-bottom: 80px;
+}
+
+.follower-block {
+    margin-left: 17vw;
+}
+
+.follower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.follower img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 16px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.follower-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding-top: 15px;
+    background-color: white;
+}
+
+/* Posts */
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 17vw;
+    width: 80vh;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gainsboro;
+}
+
+.posts-headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-headline img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: 20px
+}
+
+.posts-headline1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.posts-headline p {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.posts-picture img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.posts-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-icons div {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.posts-icons span {
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.posts-likes {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.posts-likes img {
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.posts-likes p {
+    margin-left: 15px;
+}
+
+.posts-detail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.posts-detail p {
+    margin-top: -10px;
+}
+
+.posts-detail-color {
+    color: gainsboro;
+    cursor: pointer;
+}
+
+.posts-comment {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.posts-own-comment {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: gainsboro;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.input input {
+    border-width: unset;
+    border-style: unset;
+    border-color: unset;
+    box-sizing: unset;
+    border-image: unset;
+    text-rendering: unset;
+}
+
+.posts-own-comment button {
+    margin-right: 20px;
+    color: #96CDCD;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.posts-own-comment button:hover {
+    color: #27408B;
+}
+
+/* Side-Bar */
+
+.side-bar {
+    display: flex;
+    top: 12vh;
+    right: calc(100% - 965px);
+}
+
+.side-bar img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.side-bar-content {
+    position: fixed;
+    margin-left: 3vw;
+}
+
+.aboutME {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutME div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
+}
+
+.follower-info {
+    margin-top: 20px;
+}
+
+.follower-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.follower-name {
+    margin-top: 20px;
+}
+
+.blue {
+    color: #0088ff;
+}
+
+/* Popup */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: grey;
+    transform: translate(-50%, -50%) scale(0);
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.content input {
+    text-align: center;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media(max-width: 1240px) {
+    .side-bar {
+        display: none;
+    }
+}
+
+@media(max-width: 1035px) {
+    .side-bar {
+        display: none;
+    }
+    .header {
+        justify-content: space-around;
+    }
+    .header-left {
+        margin-left: unset;
+    }
+    .header-middle {
+        display: none;
+    }
+    .header-right {
+        margin-right: unset;
+    }
+    .newsfeed {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .post {
+        width: unset;
+        margin-top: unset;
+    }
+    .popup .overlay {
+        width: 100%;
+        height: 100%;
+    }
+    .follower {
+        display: none;
+        margin-left: unset
+    }
+    .main {
+        justify-content: center;
+    }
+    .popup .content {
+        width: unset;
+        height: unset;
+        font-size: 0.6em;
+        position: fixed;
+    }
+    .post {
+        margin-left: unset;
+    }
+    .posts-own-comment {
+        height: 10vh;
+    }
+    .posts-own-comment input {
+        margin-left: 5px;
+        height: 4vh;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gainsboro;
+    }
+    .follower-block {
+        margin-left: unset;
+    }
+}
